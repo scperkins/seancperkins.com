@@ -7,7 +7,6 @@ app = Flask(__name__)
 def get_repos():
     url = 'https://api.github.com/users/scperkins/repos?per_page=100'
     response = requests.get(url)
-    #import pdb;pdb.set_trace()
     repos = response.json()
     repos.sort(key=itemgetter('updated_at'), reverse=True)
     repos = [x for x in repos if not x['fork'] and not x['private']]
