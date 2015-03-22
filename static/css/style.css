@@ -1,8 +1,10 @@
 
 html, body {
 	display: flex;
+	display: -webkit-flex;
     min-height: 100vh;
     flex-direction: column;
+    -webkit-flex-direction: column;
 	background-color: #11151c;
 	color: #33859E;
 }
@@ -55,6 +57,7 @@ ul.resume {
 
 main {
 	flex: 1 0 auto;
+	-webkit-flex: 1 0 auto;
 }
 
 /*header styles*/
