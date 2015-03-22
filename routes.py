@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 from operator import itemgetter
-import time, requests
+import requests
 
 app = Flask(__name__)
 
@@ -15,18 +15,15 @@ def get_repos():
 
 @app.route('/')
 def home():
-    time.sleep(0.5)
     return render_template('home.html')
 
 @app.route('/projects')
 def projects():
-    time.sleep(0.5)
     repos = get_repos()
     return render_template('projects.html', repos=repos)
 
 @app.route('/resume')
 def resume():
-    time.sleep(0.5)
     return render_template('resume.html')
 
 @app.errorhandler(404)
