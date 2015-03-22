@@ -1,0 +1,12 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+	<p>This page will eventually showcase side projects I'm working on and/or have completed. At the moment, I don't have any projects that I feel are of enough significance to be listed here. Instead, here is a list of my most recent github repos:</p>
+
+	<a class="dropdown-button btn" data-below-origin="true" href="#!" data-activates="dropdown1">Github Repos</a>
+    <ul id="dropdown1" class="dropdown-content">    
+    {% for repo in repos %}
+        <li><a href="{{ repo['html_url'] }}">{{ repo['name'] }}<span>&nbsp;({{ repo['language'] }})</span></a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}
