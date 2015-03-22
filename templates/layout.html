@@ -4,10 +4,22 @@
 	<title>Sean Perkins</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name = 'description' content='The personal website of Sean Perkins, computer science graduate from the University of Vermont.'>
+  	<meta name='keywords' content='Sean, Perkins, C, github, programming, programmer, software, developer, resume, website, linux, python'>
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <link rel="stylesheet" media="screen,projection" href="{{ url_for('static', filename='css/materialize.min.css')}}"/> 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+     <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-61031774-1', 'auto');
+		  ga('send', 'pageview');
+	</script>
 </head>
 <body>
 
@@ -46,16 +58,6 @@
                 <a class="right" href="https://twitter.com/syntacticsugar_"><img src="{{ url_for('static', filename='img/twitter-48.png')}}"></a>
             </div>
         </div>
-        <script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-61031774-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
     </footer>
 
     <!-- Javascripts -->
