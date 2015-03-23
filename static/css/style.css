@@ -104,6 +104,19 @@ header {
 	background-color: rgba(78,81,155,0.65);
 }
 
+.circular {
+	margin: 10px 25px 0px;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	background: url(http://link-to-your/image.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
 /*Footer*/
 footer.page-footer {
   	width: 100%;
