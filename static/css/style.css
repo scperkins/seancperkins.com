@@ -86,6 +86,7 @@ header {
 .left-nav ul li {
 	font-size: 16px;
 	border-top: 1px grey solid;
+	list-style-type: none;
 	padding: 0;
 }
 
