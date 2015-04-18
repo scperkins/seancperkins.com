@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 
 def get_repos():
-    url = 'https://api.github.com/users/scperkins/repos?per_page=100'
+    url = 'https://api.github.com/users/scperkins/repos?per_page=50'
     response = requests.get(url)
     repos = response.json()
     repos.sort(key=itemgetter('updated_at'), reverse=True)
