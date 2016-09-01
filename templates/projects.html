@@ -6,7 +6,7 @@
 	<a class="dropdown-button btn" data-below-origin="true" href="#!" data-activates="dropdown1">Github Repos</a>
     <ul id="dropdown1" class="dropdown-content">    
     {% for repo in repos %}
-        <li><a href="{{ repo['html_url'] }}" target="_blank">{{ repo['name'] }}<span>&nbsp;({{ repo['language'] }})</span></a></li>
+        <li><a href="{{ repo['html_url'] }}" target="_blank" rel="noopener">{{ repo['name'] }}<span>&nbsp;({{ repo['language'] }})</span></a></li>
     {% endfor %}
     </ul>
 {% endblock %}
